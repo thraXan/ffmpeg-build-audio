@@ -16,11 +16,8 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-programs
     --enable-rdft
     --enable-ffmpeg
-#    --enable-ffprobe
+    --enable-ffprobe
 
-    --disable-ffprobe    
-	--disable-ffplay
-	--disable-fast-unaligned
     
     --disable-network
     --disable-muxers
@@ -57,20 +54,20 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-protocol=file
     --enable-protocol=pipe
 
-#    --enable-demuxer=image2
+    --enable-demuxer=image2
     --enable-demuxer=aac
     --enable-demuxer=ac3
     --enable-demuxer=aiff
     --enable-demuxer=ape
     --enable-demuxer=asf
     --enable-demuxer=au
-#    --enable-demuxer=avi
+    --enable-demuxer=avi
     --enable-demuxer=flac
     --enable-demuxer=flv
     --enable-demuxer=matroska
-#    --enable-demuxer=mov
+    --enable-demuxer=mov
     --enable-demuxer=m4v
-#    --enable-demuxer=mp3
+    --enable-demuxer=mp3
     --enable-demuxer=mpc
     --enable-demuxer=mpc8
     --enable-demuxer=ogg
@@ -119,12 +116,12 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-decoder=mp1float
     --enable-decoder=mp2
     --enable-decoder=mp2float
-#    --enable-decoder=mp3
-#    --enable-decoder=mp3adu
-#    --enable-decoder=mp3adufloat
-#    --enable-decoder=mp3float
-#    --enable-decoder=mp3on4
-#    --enable-decoder=mp3on4float
+    --enable-decoder=mp3
+    --enable-decoder=mp3adu
+    --enable-decoder=mp3adufloat
+    --enable-decoder=mp3float
+    --enable-decoder=mp3on4
+    --enable-decoder=mp3on4float
     --enable-decoder=mpc7
     --enable-decoder=mpc8
     --enable-decoder=opus
