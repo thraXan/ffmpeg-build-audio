@@ -7,7 +7,7 @@ on:
 
 jobs:
   package-windows:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         arch:
@@ -17,14 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install dependencies
-        uses: msys2/setup-msys2@v2
-        with:
-          msystem: MINGW64
-          update: true
-          install: git mingw-w64-x86_64-toolchain mingw-w64-cross-toolchain mingw-w64-x86_64-openssl openssl-devel base-devel yasm 
+        run: |
+          sudo apt-get update -y && \
+          sudo apt-get install -y yasm mingw-w64
       - name: Build
-        shell: msys2 {0}
-        run: PATH=$PATH:/opt/bin ./build-windows.sh
+        run: ./build-windows.sh
       - name: Archive production artifacts
         uses: actions/upload-artifact@v1
         with:
@@ -32,7 +29,7 @@ jobs:
           path: artifacts/
 
   release:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs:
       - package-windows
     steps:
