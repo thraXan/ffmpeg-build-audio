@@ -7,7 +7,7 @@ on:
 
 jobs:
   package-windows:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
         arch:
@@ -29,7 +29,7 @@ jobs:
           path: artifacts/
 
   release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs:
       - package-windows
     steps:
