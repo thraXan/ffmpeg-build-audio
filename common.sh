@@ -18,7 +18,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-ffmpeg
 #    --enable-ffprobe
     
-    	--enable-aresample
+    	--enable-avresample
     	--disable-ffprobe
 	--disable-ffplay
 	--disable-fast-unaligned
