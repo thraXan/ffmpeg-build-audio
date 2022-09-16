@@ -46,6 +46,8 @@ FFMPEG_CONFIGURE_FLAGS=(
     
 	--enable-encoder=flac
 	--enable-muxer=flac
+	--enable-encoder=wav
+	--enable-muxer=wav	
     
     --disable-decoders
     --disable-hwaccels
