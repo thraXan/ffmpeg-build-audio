@@ -72,6 +72,9 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-demuxer=flv
     --enable-demuxer=matroska
     --enable-demuxer=mov
+    
+    --enable-decoder=mov
+    
     --enable-demuxer=m4v
 #    --enable-demuxer=mp3
     --enable-demuxer=mpc
