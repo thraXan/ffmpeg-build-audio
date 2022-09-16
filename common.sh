@@ -36,7 +36,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-encoders
     
 	--enable-encoder=flac
-#	--enable-muxer=flac
+	--enable-muxer=flac
     
     --disable-decoders
     --disable-hwaccels
