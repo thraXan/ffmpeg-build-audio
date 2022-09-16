@@ -5,6 +5,13 @@ FFMPEG_TARBALL=ffmpeg-$FFMPEG_VERSION.tar.bz2
 FFMPEG_TARBALL_URL=http://ffmpeg.org/releases/$FFMPEG_TARBALL
 
 FFMPEG_CONFIGURE_FLAGS=(
+	--disable-everything
+	--enable-pthreads
+	--enable-small
+	--enable-nonfree
+	--enable-version3
+	
+
     --disable-shared
     --enable-static
     --enable-pic
