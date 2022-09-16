@@ -187,11 +187,11 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-parser=aac_latm
     --enable-parser=ac3
     
-    --enable-parser=ape
+#    --enable-parser=ape
     
     --enable-parser=cook
     --enable-parser=dca
-    --enable-parser=flac
+#    --enable-parser=flac
     --enable-parser=gsm
 #    --enable-parser=mpegaudio
     --enable-parser=tak
