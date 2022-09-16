@@ -193,4 +193,9 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-parser=mpegaudio
     --enable-parser=tak
     --enable-parser=vorbis
+    
+    
+    --enable-demuxer=mpeg4
+    --enable-decoder=mpeg4
+    
 )
