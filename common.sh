@@ -10,6 +10,9 @@ FFMPEG_CONFIGURE_FLAGS=(
 	--enable-nonfree
 	--enable-version3
 	
+	--target-os=win64
+	--arch=x86_64
+	--toolchain=msvc
 
     --disable-shared
     --enable-static
