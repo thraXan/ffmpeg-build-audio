@@ -122,12 +122,12 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-decoder=mp1float
     --enable-decoder=mp2
     --enable-decoder=mp2float
-#    --enable-decoder=mp3
-#    --enable-decoder=mp3adu
-#    --enable-decoder=mp3adufloat
-#    --enable-decoder=mp3float
-#    --enable-decoder=mp3on4
-#    --enable-decoder=mp3on4float
+    --enable-decoder=mp3
+    --enable-decoder=mp3adu
+    --enable-decoder=mp3adufloat
+    --enable-decoder=mp3float
+    --enable-decoder=mp3on4
+    --enable-decoder=mp3on4float
     --enable-decoder=mpc7
     --enable-decoder=mpc8
     --enable-decoder=opus
@@ -193,9 +193,5 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-parser=mpegaudio
     --enable-parser=tak
     --enable-parser=vorbis
-    
-    
-    --enable-demuxer=mpeg4
-    --enable-decoder=mpeg4
     
 )
