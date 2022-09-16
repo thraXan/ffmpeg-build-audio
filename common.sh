@@ -191,7 +191,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     
     --enable-parser=cook
     --enable-parser=dca
-#    --enable-parser=flac
+    --enable-parser=flac
     --enable-parser=gsm
 #    --enable-parser=mpegaudio
     --enable-parser=tak
