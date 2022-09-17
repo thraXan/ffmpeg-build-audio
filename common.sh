@@ -6,7 +6,7 @@ FFMPEG_TARBALL_URL=http://ffmpeg.org/releases/$FFMPEG_TARBALL
 
 FFMPEG_CONFIGURE_FLAGS=(
 
---cflags='-march=skylake -O3 -fomit-frame-pointer'
+--cflags='-O3 -fomit-frame-pointer'
 
 --disable-everything
 	--enable-small
