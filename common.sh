@@ -6,8 +6,6 @@ FFMPEG_TARBALL_URL=http://ffmpeg.org/releases/$FFMPEG_TARBALL
 
 FFMPEG_CONFIGURE_FLAGS=(
 
---cflags='-O3 -fomit-frame-pointer'
-
 --disable-everything
 	--enable-small
 	--enable-nonfree
