@@ -7,11 +7,18 @@ on:
 
 jobs:
   package-windows:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
-        arch:
-          - x86_64
+		name: "xxxxxxxxxxxxxx",
+		os: windows-latest
+        artifact: "windows_msvc.7z"
+        build_type: "Release"
+		environment_script: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Auxiliary/Build/vcvars64.bat",
+        archiver: "7z a",
+        generators: "Visual Studio 16 2019"
+        arch: x86_64
+
     env:
       ARCH: ${{ matrix.arch }}
     steps:
@@ -29,7 +36,7 @@ jobs:
           path: artifacts/
 
   release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs:
       - package-windows
     steps:
