@@ -14,7 +14,7 @@ FFMPEG_CONFIGURE_FLAGS=(
 	--target-os=win64
 	--arch=x86_64
 	--enable-w32threads
-	--extra-cflags='-O6 -march=sandybridge -mtune=sandybridge -fopenmp -mfpmath=sse -fno-delete-null-pointer-checks --param=ssp-buffer-size=4 -pipe -D_FORTIFY_SOURCE=2'
+	--extra-cflags='-O6 -march=sandybridge -mtune=sandybridge'
 
     --disable-shared
     --enable-static
