@@ -49,7 +49,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     
 #	--enable-encoder=flac
 #	--enable-muxer=flac
-	--enable-encoder=wav
+#	--enable-encoder=wav
 	--enable-muxer=wav	
 	--enable-encoder=pcm_s16le
 	--enable-muxer=pcm_s16le	
@@ -89,7 +89,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --enable-demuxer=matroska
     --enable-demuxer=mov
     
-    --enable-decoder=mov
+#    --enable-decoder=mov
     
     --enable-demuxer=m4v
 #    --enable-demuxer=mp3
