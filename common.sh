@@ -14,6 +14,7 @@ FFMPEG_CONFIGURE_FLAGS=(
 	--target-os=win64
 	--arch=x86_64
 	--enable-w32threads
+	--enable-runtime-cpudetect
 
     --disable-shared
     --enable-static
