@@ -52,7 +52,9 @@ FFMPEG_CONFIGURE_FLAGS=(
 	--enable-muxer=wav	
 	--enable-encoder=pcm_s16le
 	--enable-muxer=pcm_s16le
+	
 	--enable-muxer=sox
+	--enable-encoder=pcm_s32le
 	--enable-muxer=pcm_s32le
     
     --disable-decoders
