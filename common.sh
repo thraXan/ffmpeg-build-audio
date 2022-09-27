@@ -50,12 +50,48 @@ FFMPEG_CONFIGURE_FLAGS=(
 #	--enable-muxer=flac
 #	--enable-encoder=wav
 	--enable-muxer=wav	
-	--enable-encoder=pcm_s16le
-	--enable-muxer=pcm_s16le
-	
-	--enable-muxer=sox
+	--enable-encoder=pcm_alaw
+	--enable-muxer=pcm_alaw
+	--enable-encoder=pcm_mulaw
+	--enable-muxer=pcm_mulaw
+	--enable-encoder=pcm_f64be
+	--enable-muxer=pcm_f64be
+	--enable-encoder=pcm_f64le
+	--enable-muxer=pcm_f64le
+	--enable-encoder=pcm_f32be
+	--enable-muxer=pcm_f32be
+	--enable-encoder=pcm_f32le
+	--enable-muxer=pcm_f32le
+	--enable-encoder=pcm_s32be
+	--enable-muxer=pcm_s32be
 	--enable-encoder=pcm_s32le
 	--enable-muxer=pcm_s32le
+	--enable-encoder=pcm_s24be
+	--enable-muxer=pcm_s24be
+	--enable-encoder=pcm_s24le
+	--enable-muxer=pcm_s24le
+	--enable-encoder=pcm_s16be
+	--enable-muxer=pcm_s16be
+	--enable-encoder=pcm_s16le
+	--enable-muxer=pcm_s16le
+	--enable-encoder=pcm_s8
+	--enable-muxer=pcm_s8
+	--enable-encoder=pcm_u32be
+	--enable-muxer=pcm_u32be
+	--enable-encoder=pcm_u32le
+	--enable-muxer=pcm_u32le
+	--enable-encoder=pcm_u24be
+	--enable-muxer=pcm_u24be
+	--enable-encoder=pcm_u24le
+	--enable-muxer=pcm_u24le
+	--enable-encoder=pcm_u16be
+	--enable-muxer=pcm_u16be
+	--enable-encoder=pcm_u16le
+	--enable-muxer=pcm_u16le
+	--enable-encoder=pcm_u8
+	--enable-muxer=pcm_u8
+	
+	
     
     --disable-decoders
     --disable-hwaccels
