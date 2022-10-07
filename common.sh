@@ -14,7 +14,7 @@ FFMPEG_CONFIGURE_FLAGS=(
 	--target-os=win64
 	--arch=x86_64
 	--enable-w32threads
-	--extra-cflags='-O3 -march=ivybridge -mtune=ivybridge'
+	--extra-cflags='-O3 -march=ivybridge -mtune=ivybridge -mcpu=ivybridge -mprefer-vector-width=128'
 
     --disable-shared
     --enable-static
