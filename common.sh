@@ -37,8 +37,10 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-muxers
     --disable-demuxers
     --disable-zlib
+    						--disable-lzma
     --disable-bzlib
     --disable-iconv
+    						--disable-libxcb
     --disable-bsfs
     --disable-filters
     --disable-parsers
