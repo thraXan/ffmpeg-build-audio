@@ -25,7 +25,7 @@ FFMPEG_CONFIGURE_FLAGS=(
     --disable-avdevice
     --disable-swscale
     --disable-programs
-    --enable-rdft
+#    --enable-rdft
     --enable-ffmpeg
 #    --enable-ffprobe
     
