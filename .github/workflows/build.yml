@@ -15,7 +15,7 @@ jobs:
     env:
       ARCH: ${{ matrix.arch }}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Install dependencies
         run: |
           sudo apt-get update -y && \
