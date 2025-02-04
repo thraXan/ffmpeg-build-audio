@@ -33,7 +33,7 @@ jobs:
     needs:
       - package-windows
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           path: artifacts/
       - name: Make tarballs
